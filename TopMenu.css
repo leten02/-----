@@ -30,21 +30,3 @@ body{
     color: skyblue;
     background-color: #4d4d4d;
 }
-#subTopMenu {
-    float: left;
-    width: 100%;
-    list-style: none;
-    vertical-align: middle;
-    text-align: center;
-    background-color: rgb(184, 181, 181);
-}
-#subTopMenu li {
-    display: inline-block;
-    width: 170px;
-    text-decoration:none;
-    color: white;
-}
-#subTopMenu .STM-Asia {
-    text-decoration:none;
-    color: black;
-}
