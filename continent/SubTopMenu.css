@@ -12,10 +12,10 @@
     text-decoration:none;
     color: white;
 }
-#subTopMenu .STM-Asia {
+#subTopMenu .Subtopmenu_list {
     text-decoration:none;
     color: black;
 }
-#subTopMenu .STM-Asia:hover {
+#subTopMenu .Subtopmenu_list:hover {
     color: rgb(255, 255, 255);
 }
