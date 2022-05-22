@@ -2,10 +2,11 @@ body{
     margin: 0;
 }
 #topMenu {
-    height: 40px;
+    /* height: 40px; */
     width: 100%;
     background-color: rgba(0,0,0,0.8);
-    margin-top: -15px;
+    margin-top: -16px;
+    margin-bottom: -16px;
 }
 #topMenu li {
     display: inline-block;

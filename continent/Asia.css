@@ -1,21 +1,19 @@
 body{
-    margin: 0;
-}
-#subTopMenu {
-    float: left;
     width: 100%;
-    list-style: none;
     vertical-align: middle;
     text-align: center;
-    background-color: rgb(184, 181, 181);
 }
-#subTopMenu li {
+#Asia_mainmenu_middle .Asia_mainmenu_southkorea {
+    padding: 10px;
+    margin: 10px;
+    border: 10px;
     display: inline-block;
-    width: 170px;
-    text-decoration:none;
-    color: white;
 }
-#subTopMenu .STM-Asia {
-    text-decoration:none;
-    color: black;
+.button {
+    padding: 13px;
+    border-radius: 980px;
+    background-color: #0071e3;
+    color: white;
+    display: inline-block;
+    margin-bottom: 15px;
 }
