@@ -1,32 +1,3 @@
 body{
     margin: 0;
 }
-#topMenu {
-    height: 40px;
-    width: 100%;
-    background-color: rgba(0,0,0,0.8);
-    margin-top: -15px;
-}
-#topMenu li {
-    display: inline-block;
-}
-#topMenu ul {
-    list-style: none;
-    color: white;
-    line-height: 40px;
-    vertical-align: middle;
-    text-align: center;
-}
-#topMenu .menuLink {
-    text-decoration:none;
-    color: white;
-    display: block;
-    width: 150px;
-    font-size: 12px;
-    font-weight: bold;
-    font-family: "Trebuchet MS";
-}
-#topMenu .menuLink:hover {
-    color: skyblue;
-    background-color: #4d4d4d;
-}
