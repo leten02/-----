@@ -1,0 +1,12 @@
+#nationname {
+    text-align: center;
+    padding: 20px 30px;
+    border: 5px solid black;
+    margin-top: 40px;
+    font-weight: bold;
+}
+#nationcontent {
+    padding: 20px 30px;
+    border: 5px solid black;
+    margin-top: 20px;
+}

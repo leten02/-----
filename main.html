@@ -5,6 +5,18 @@
         <title>Home</title>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="TopMenu.css">
+        <link rel="stylesheet" href="/continent/Asia.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+          $(document).ready(function(){
+          var cards = $(".photographer");
+          for(var i = 0; i < cards.length; i++){
+          var target = Math.floor(Math.random() * cards.length -1) + 1;
+          var target2 = Math.floor(Math.random() * cards.length -1) +1;
+          cards.eq(target).before(cards.eq(target2));
+          };
+          });
+        </script>
     </head>
     <body>
         <div id="topMenu">
@@ -17,6 +29,70 @@
                 <li><a class="menuLink" href="continent/Oceania.html">Oceania</a></li>
                 <li><a class="menuLink" href="R-site.html">관련사이트</a></li>
             </ul>
+        </div>
+        <div class="empty"></div>
+        <div class='photographer'>
+            <div class="Asia_mainmenu">
+                <div class="top_Asia_mainmenu_">
+                    <h1>대한민국</h1>
+                    <p>멘트멘트멘트멘트멘트멘트멘트멘트멘트멘트</p>
+                    <a href="Asia/Asia_southKorea.html">
+                        <span class="button">더 알아보기 ></span>
+                    </a>
+                </div>
+                <div class="middle_Asia_mainmenu">
+                    <img src="https://blog.kakaocdn.net/dn/dvublN/btqKhlfytfR/uc8W47HX0enI6fFFdYlE3K/img.png" alt="대한민국">
+                </div>
+            </div>
+            <div class="break"></div>
+        </div>
+        <div class='photographer'>
+            <div class="Asia_mainmenu">
+                <div class="top_Asia_mainmenu">
+                    <h1>일본</h1>
+                    <p>멘트멘트멘트멘트멘트멘트멘트멘트멘트멘트</p>
+                    <a href="Asia/Asia_japan.html">
+                        <span class="button">더 알아보기 ></span>
+                    </a>
+                </div>
+                <div class="middle_Asia_mainmenu">
+                    <img src="https://i.ytimg.com/vi/-ceq1U_-Y08/maxresdefault.jpg" alt="일본">
+                </div>
+            </div>
+            <div class="break"></div>
+        </div>
+        <div class='photographer'>
+            <div class="Asia_mainmenu">
+                <div class="top_Asia_mainmenu">
+                    <h1>아랍에미리트</h1>
+                    <p>멘트멘트멘트멘트멘트멘트멘트멘트멘트멘트</p>
+                    <a href="Asia/Asia_UAE.html">
+                        <span class="button">더 알아보기 ></span>
+                    </a>
+                </div>
+                <div class="middle_Asia_mainmenu">
+                    <img src="https://justglobetrotting.com/wp-content/uploads/2016/04/Dubai-1080x675.jpg" alt="아랍에미리트">
+                </div>
+            </div>
+            <div class="break"></div>
+        </div>
+        <div class='photographer'>
+            <div class="Asia_mainmenu">
+                <div class="top_Asia_mainmenu">
+                    <h1>대만</h1>
+                    <p>멘트멘트멘트멘트멘트멘트멘트멘트멘트멘트</p>
+                    <a href="Asia/Asia_taiwan.html">
+                        <span class="button">더 알아보기 ></span>
+                    </a>
+                </div>
+                <div class="middle_Asia_mainmenu">
+                    <img src="https://s27363.pcdn.co/wp-content/uploads/2021/02/Taiwan-Header-Photo-1600x816.jpg.optimal.jpg" alt="대만">
+                </div>
+                <div class="break"></div>
+            </div>
+        </div>
+        <div>
+            <a href="#"><img class="topBtn" src="continent/scroll-up-icon-13.jpeg"></a>
         </div>
     </body>
 </html>
