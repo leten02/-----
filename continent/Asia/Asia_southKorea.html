@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="../../TopMenu.css">
         <link rel="stylesheet" href="Asia_southKorea.css">
+        <script src="https://kit.fontawesome.com/01112ef589.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <div id="top">
@@ -20,14 +21,59 @@
                     <li><a class="menuLink" href="../R-site.html">관련사이트</a></li>
                 </ul>
             </div>
-        </div>
-        <div id="middle">
-            <div>
-                <div id="nationname">
-                    South Korea 대한민국
-                    <div><img src="South Korea.jpg.png" alt="South Korea" title="South Korea" width="30" height="30" /></div>
+            <div id="topinform">
+                <div class="nation">
+                    <div class="nationname">대한민국 🇰🇷</div>
+                    <div>
+                        (수도기준) 비행시간(직항)) 0시간 <br>
+                        = 대한민국 KRW
+                    </div>
+                </div>
+                <div class="maininform">
+                    <div class="col">
+                        <p>현지 시간</p>
+                        <i class="fa-solid fa-clock"></i>  
+                        <div>
+                            <p id="clock">00:00</p>
+                            <script>
+                                var Target = document.getElementById("clock");
+                                function clock(){
+                                    var now = new Date();
+                                    var hours = now.getHours();
+                                    var minutes = now.getMinutes()
+                                    var seconds = now.getSeconds();
+                                    Target.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
+                                }
+                                clock();
+                                setInterval(clock,1000);
+                            </script>
+                        </div>
+                                         
+                    </div>
+                    <span class="col">
+                        <p>오늘날씨</p>
+                        <i class="fa-solid fa-sun"></i>
+                        <p>좋음</p>
+                    </div>
+                    <div class="col">
+                        <p>비자</p>
+                        <i class="fa-solid fa-globe"></i>
+                        <p>무비자</p>
+                    </div>
+                    <div class="col">
+                        <p>전압</p>
+                        <i class="fa-solid fa-plug"></i>
+                        <p>220V</p>
+                    </div>
+                    <div class="col">
+                        <p>여행최적기</p>
+                        <i class="fa-solid fa-plane-departure"></i>
+                        <p>언제가도 굿</p>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div id="middle">
             <div id="nationcontent">
                 <p>content</p>
             <div middle>
