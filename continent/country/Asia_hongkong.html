@@ -5,7 +5,7 @@
         <title>Home</title>
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="../../TopMenu.css">
-        <link rel="stylesheet" href="Asia_southKorea.css">
+        <link rel="stylesheet" href="country.css">
         <script src="https://kit.fontawesome.com/01112ef589.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -23,10 +23,10 @@
             </div>
             <div id="topinform">
                 <div class="nation">
-                    <div class="nationname">대한민국 🇰🇷</div>
+                    <div class="nationname">일본 🇯🇵</div>
                     <div>
-                        (수도기준) 비행시간(직항)) 0시간 <br>
-                        = 대한민국 KRW
+                        비행시간(직항) 3시 40분 <br>
+                        홍콩 HKD 1 = 대한민국 KRW 160.01원
                     </div>
                 </div>
                 <div class="maininform">
@@ -38,8 +38,8 @@
                             <script>
                                 var Target = document.getElementById("clock");
                                 function clock(){
-                                    var now = new Date();
-                                    var hours = now.getHours();
+                                    var now = new Date(), then = new Date();
+                                    var hours = setHours(now.getHours()-1);
                                     var minutes = now.getMinutes()
                                     var seconds = now.getSeconds();
                                     Target.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
@@ -58,7 +58,7 @@
                     <div class="col">
                         <p>비자</p>
                         <i class="fa-solid fa-globe"></i>
-                        <p>무비자</p>
+                        <p>무비자 90일간 체류 가능</p>
                     </div>
                     <div class="col">
                         <p>전압</p>
@@ -68,7 +68,7 @@
                     <div class="col">
                         <p>여행최적기</p>
                         <i class="fa-solid fa-plane-departure"></i>
-                        <p>언제가도 굿</p>
+                        <p>9~1월 덥지 않은 쾌적한 날씨</p>
                     </div>
                 </div>
             </div>
@@ -81,7 +81,5 @@
         <div>
             <a href="#"><img class="topBtn" src="../scroll-up-icon-13.jpeg"></a>
         </div>
-        
-        
     </body>
 </html>
