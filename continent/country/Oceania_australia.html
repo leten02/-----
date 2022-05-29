@@ -23,7 +23,7 @@
             </div>
             <div id="topinform">
                 <div class="nation">
-                    <div class="nationname">멕시코 🇲🇽</div>
+                    <div class="nationname">호주 🇦🇺</div>
                     <div>
                         비행시간(직항) 3시 40분 <br>
                         홍콩 HKD 1 = 대한민국 KRW 160.01원
@@ -39,7 +39,7 @@
                                 var Target = document.getElementById("clock");
                                 function clock(){
                                     var now = new Date();
-                                    var hours = now.getHours()-1;
+                                    var hours = now.getHours()-9;
                                     var minutes = now.getMinutes()
                                     var seconds = now.getSeconds();
                                     Target.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
@@ -48,7 +48,6 @@
                                 setInterval(clock,1000);
                             </script>
                         </div>
-                                         
                     </div>
                     <span class="col">
                         <p>오늘날씨</p>
