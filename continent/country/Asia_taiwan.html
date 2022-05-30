@@ -40,6 +40,9 @@
                                 function clock(){
                                     var now = new Date();
                                     var hours = now.getHours()-1;
+                                    if(hours<0){
+                                        hours = 24 + hours;
+                                    }
                                     var minutes = now.getMinutes()
                                     var seconds = now.getSeconds();
                                     Target.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
@@ -73,10 +76,31 @@
                 </div>
             </div>
         </div>
-        <div id="middle">
-            <div id="nationcontent">
-                <p>content</p>
+        <div class="middle">
+            <div class="mainscrollinform">
+                <div>
+                    <img class="mainscrollimg" src="https://scandasia.com/wp-content/uploads/2018/12/TAIPEI.jpg" alt="타이베이">
+                </div>
+                <div class="mainscrolldetail">
+                    <span class="mainscrolldetail-nation">타이베이</span>
+                    <p></p>
+                    <a href="https://www.travel.taipei/ko">
+                        <span class="button">더 알아보기 ></span>
+                    </a>
+                </div>
             </div>
+            <div class="mainscrollinform">
+                <div>
+                    <img class="mainscrollimg" src="https://www.willflyforfood.net/wp-content/uploads/2018/05/kaohsiung-taiwan-travel-guide.jpg" alt="가오슝">
+                </div>
+                <div class="mainscrolldetail">
+                    <span class="mainscrolldetail-nation">가오슝</span>
+                    <p></p>
+                    <a href="https://khh.travel/ko">
+                        <span class="button">더 알아보기 ></span>
+                    </a>
+                </div>
+            </div>  
         </div>
         <div>
             <a href="#"><img class="topBtn" src="../scroll-up-icon-13.jpeg"></a>

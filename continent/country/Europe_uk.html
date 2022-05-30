@@ -25,8 +25,8 @@
                 <div class="nation">
                     <div class="nationname">영국 🇬🇧</div>
                     <div>
-                        비행시간(직항) 3시 40분 <br>
-                        홍콩 HKD 1 = 대한민국 KRW 160.01원
+                        비행시간(직항) 최소 11시간 55분 소요 <br>
+                        1 GBP = 대한민국 KRW 1,565.77원
                     </div>
                 </div>
                 <div class="maininform">
@@ -39,7 +39,10 @@
                                 var Target = document.getElementById("clock");
                                 function clock(){
                                     var now = new Date();
-                                    var hours = now.getHours()-9;
+                                    var hours = now.getHours()-8;
+                                    if(hours<0){
+                                        hours = 24 + hours;
+                                    }
                                     var minutes = now.getMinutes()
                                     var seconds = now.getSeconds();
                                     Target.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
@@ -57,24 +60,45 @@
                     <div class="col">
                         <p>비자</p>
                         <i class="fa-solid fa-globe"></i>
-                        <p>무비자 90일간 체류 가능</p>
+                        <p>무비자 180일간 체류 가능</p>
                     </div>
                     <div class="col">
                         <p>전압</p>
                         <i class="fa-solid fa-plug"></i>
-                        <p>220V</p>
+                        <p>230V</p>
                     </div>
                     <div class="col">
                         <p>여행최적기</p>
                         <i class="fa-solid fa-plane-departure"></i>
-                        <p>9~1월 덥지 않은 쾌적한 날씨</p>
+                        <p>6월~7월</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="middle">
-            <div id="nationcontent">
-                <p>content</p>
+        <div class="middle">
+            <div class="mainscrollinform">
+                <div>
+                    <img class="mainscrollimg" src="https://search.pstatic.net/common?src=https://dbscthumb-phinf.pstatic.net/5885_000_1/20200622034932596_UQ42I5KUO.jpg/fb81_3_i1.jpg?type=w540_fst&type=w800_travelsearch" alt="런던">
+                </div>
+                <div class="mainscrolldetail">
+                    <span class="mainscrolldetail-nation">런던</span>
+                    <p></p>
+                    <a href="https://travel.naver.com/overseas/GBLON186338/city/summary">
+                        <span class="button">더 알아보기 ></span>
+                    </a>
+                </div>
+            </div>
+            <div class="mainscrollinform">
+                <div>
+                    <img class="mainscrollimg" src="https://search.pstatic.net/common?src=https://dbscthumb-phinf.pstatic.net/5885_000_13/20210329161538931_MW208SJZL.jpg/fb390_3_i1.jpg?type=w540_fst&type=w800_travelsearch" alt="에든버러">
+                </div>
+                <div class="mainscrolldetail">
+                    <span class="mainscrolldetail-nation">에든버러</span>
+                    <p></p>
+                    <a href="https://travel.naver.com/overseas/GBEDI186525/city/summary">
+                        <span class="button">더 알아보기 ></span>
+                    </a>
+                </div>
             </div>
         </div>
         <div>

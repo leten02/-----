@@ -25,7 +25,7 @@
                 <div class="nation">
                     <div class="nationname">스페인 🇪🇸</div>
                     <div>
-                        비행시간(직항) 13시 20분 <br>
+                        비행시간(직항) 최소 12시간 40분 소요 <br>
                         유로 EUR 1 = 대한민국 KRW 1334.84원
                     </div>
                 </div>
@@ -40,6 +40,9 @@
                                 function clock(){
                                     var now = new Date();
                                     var hours = now.getHours()-7;
+                                    if(hours<0){
+                                        hours = 24 + hours;
+                                    }
                                     var minutes = now.getMinutes()
                                     var seconds = now.getSeconds();
                                     Target.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
@@ -63,19 +66,40 @@
                     <div class="col">
                         <p>전압</p>
                         <i class="fa-solid fa-plug"></i>
-                        <p>220V</p>
+                        <p>230V</p>
                     </div>
                     <div class="col">
                         <p>여행최적기</p>
                         <i class="fa-solid fa-plane-departure"></i>
-                        <p>언제가도 Good !</p>
+                        <p>4월~5월, 9월~10월 추천</p>
                     </div>
                 </div>
             </div>
         </div>
-        <div id="middle">
-            <div id="nationcontent">
-                <p>content</p>
+        <div class="middle">
+            <div class="mainscrollinform">
+                <div>
+                    <img class="mainscrollimg" src="https://search.pstatic.net/common?src=https://dbscthumb-phinf.pstatic.net/5885_000_4/20200827150640772_YRHQNFTOP.jpg/fb98_3_i1.jpg?type=w540_fst&type=w800_travelsearch" alt="마드리드">
+                </div>
+                <div class="mainscrolldetail">
+                    <span class="mainscrolldetail-nation">마드리드</span>
+                    <p></p>
+                    <a href="https://travel.naver.com/overseas/ESMAD187514/city/summary">
+                        <span class="button">더 알아보기 ></span>
+                    </a>
+                </div>
+            </div>
+            <div class="mainscrollinform">
+                <div>
+                    <img class="mainscrollimg" src="https://search.pstatic.net/common?src=https://dbscthumb-phinf.pstatic.net/5885_000_4/20200827140301615_GMH5Z372C.jpg/fb99_3_i1.jpg?type=w540_fst&type=w800_travelsearch" alt="바르셀로나">
+                </div>
+                <div class="mainscrolldetail">
+                    <span class="mainscrolldetail-nation">바르셀로나</span>
+                    <p></p>
+                    <a href="https://travel.naver.com/overseas/ESBCN187497/city/summary">
+                        <span class="button">더 알아보기 ></span>
+                    </a>
+                </div>
             </div>
         </div>
         <div>

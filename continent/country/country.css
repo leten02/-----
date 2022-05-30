@@ -33,7 +33,7 @@ i {
     height: 40px;
 }
 .mainscrollinform {
-    margin: 1%;
+    margin: 4% 1%;
     width: 31%;
     height: 550px;
     border-radius: 20px;
@@ -82,6 +82,7 @@ i {
     color: white;
     display: inline-block;
     margin-bottom: 16px;
+    margin-top: 25px;
 }
 .button:hover {
     border: 1px solid #0071e3;;

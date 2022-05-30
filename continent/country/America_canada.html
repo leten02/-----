@@ -40,6 +40,9 @@
                                 function clock(){
                                     var now = new Date();
                                     var hours = now.getHours()-13;
+                                    if(hours<0){
+                                        hours = 24 + hours;
+                                    }
                                     var minutes = now.getMinutes()
                                     var seconds = now.getSeconds();
                                     Target.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
@@ -73,10 +76,31 @@
                 </div>
             </div>
         </div>
-        <div id="middle">
-            <div id="nationcontent">
-                <p>content</p>
+        <div class="middle">
+            <div class="mainscrollinform">
+                <div>
+                    <img class="mainscrollimg" src="https://embedwistia-a.akamaihd.net/deliveries/921e2e9e3f8431f05d2253f78561dbcc.webp?image_crop_resized=1280x750" alt="토론토">
+                </div>
+                <div class="mainscrolldetail">
+                    <span class="mainscrolldetail-nation">토론토</span>
+                    <p></p>
+                    <a href="https://kr-keepexploring.canada.travel/places-to-go/toronto">
+                        <span class="button">더 알아보기 ></span>
+                    </a>
+                </div>
             </div>
+            <div class="mainscrollinform">
+                <div>
+                    <img class="mainscrollimg" src="https://paidonnnn.com/wp-content/uploads/2018/08/van_cover.jpg" alt="밴쿠버">
+                </div>
+                <div class="mainscrolldetail">
+                    <span class="mainscrolldetail-nation">벤쿠버</span>
+                    <p></p>
+                    <a href="https://kr-keepexploring.canada.travel/places-to-go/vancouver">
+                        <span class="button">더 알아보기 ></span>
+                    </a>
+                </div>
+            </div>  
         </div>
         <div>
             <a href="#"><img class="topBtn" src="../scroll-up-icon-13.jpeg"></a>

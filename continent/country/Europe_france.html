@@ -39,8 +39,11 @@
                                 var Target = document.getElementById("clock");
                                 function clock(){
                                     var now = new Date();
-                                    var hours = now.getHours()-8;
-                                    var minutes = now.getMinutes()
+                                    var hours = now.getHours()-7;
+                                    if(hours<0){
+                                        hours = 24 + hours;
+                                    }
+                                    var minutes = now.getMinutes();
                                     var seconds = now.getSeconds();
                                     Target.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
                                 }
@@ -73,9 +76,30 @@
                 </div>
             </div>
         </div>
-        <div id="middle">
-            <div id="nationcontent">
-                <p>content</p>
+        <div class="middle">
+            <div class="mainscrollinform">
+                <div>
+                    <img class="mainscrollimg" src="Paris.jpg" alt="파리">
+                </div>
+                <div class="mainscrolldetail">
+                    <span class="mainscrolldetail-nation">파리</span>
+                    <p></p>
+                    <a href="https://travel.naver.com/overseas/FRPAR187147/city/summary">
+                        <span class="button">더 알아보기 ></span>
+                    </a>
+                </div>
+            </div>
+            <div class="mainscrollinform">
+                <div>
+                    <img class="mainscrollimg" src="https://search.pstatic.net/common?src=https://dbscthumb-phinf.pstatic.net/5885_000_13/20210407143707006_QA2SO71UM.jpg/fb421_3_i1.jpg?type=w540_fst&type=w800_travelsearch" alt="브리타니">
+                </div>
+                <div class="mainscrolldetail">
+                    <span class="mainscrolldetail-nation">브리타니</span>
+                    <p></p>
+                    <a href="https://travel.naver.com/overseas/FR39187094/city/summary">
+                        <span class="button">더 알아보기 ></span>
+                    </a>
+                </div>
             </div>
         </div>
         <div>

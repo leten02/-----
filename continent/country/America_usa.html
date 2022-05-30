@@ -40,6 +40,9 @@
                                 function clock(){
                                     var now = new Date();
                                     var hours = now.getHours()-13;
+                                    if(hours<0){
+                                        hours = 24 + hours;
+                                    }
                                     var minutes = now.getMinutes()
                                     var seconds = now.getSeconds();
                                     Target.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
@@ -73,10 +76,31 @@
                 </div>
             </div>
         </div>
-        <div id="middle">
-            <div id="nationcontent">
-                <p>content</p>
+        <div class="middle">
+            <div class="mainscrollinform">
+                <div>
+                    <img class="mainscrollimg" src="https://i.ytimg.com/vi/g3a7Fv76700/maxresdefault.jpg" alt="뉴욕">
+                </div>
+                <div class="mainscrolldetail">
+                    <span class="mainscrolldetail-nation">뉴욕</span>
+                    <p></p>
+                    <a href="https://www.gousa.or.kr/destination/new-york-city">
+                        <span class="button">더 알아보기 ></span>
+                    </a>
+                </div>
             </div>
+            <div class="mainscrollinform">
+                <div>
+                    <img class="mainscrollimg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZDtoxFEaWvfdSX3AFxbNzDASrwi0ImZwh6Q&usqp=CAU" alt="캘리포니아">
+                </div>
+                <div class="mainscrolldetail">
+                    <span class="mainscrolldetail-nation">캘리포니아</span>
+                    <p></p>
+                    <a href="https://www.gousa.or.kr/state/california">
+                        <span class="button">더 알아보기 ></span>
+                    </a>
+                </div>
+            </div>  
         </div>
         <div>
             <a href="#"><img class="topBtn" src="../scroll-up-icon-13.jpeg"></a>
