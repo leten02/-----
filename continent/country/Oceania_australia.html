@@ -25,8 +25,8 @@
                 <div class="nation">
                     <div class="nationname">호주 🇦🇺</div>
                     <div>
-                        비행시간(직항) 3시 40분 <br>
-                        홍콩 HKD 1 = 대한민국 KRW 160.01원
+                        비행시간(직항) 10시 30분 <br>
+                        호주 AUD 1 = 대한민국 KRW 891.74원
                     </div>
                 </div>
                 <div class="maininform">
@@ -39,7 +39,7 @@
                                 var Target = document.getElementById("clock");
                                 function clock(){
                                     var now = new Date();
-                                    var hours = now.getHours()-9;
+                                    var hours = now.getHours()+1;
                                     var minutes = now.getMinutes()
                                     var seconds = now.getSeconds();
                                     Target.innerText = `${hours < 10 ? `0${hours}` : hours}:${minutes < 10 ? `0${minutes}` : minutes}:${seconds < 10 ? `0${seconds}` : seconds}`;
@@ -57,17 +57,17 @@
                     <div class="col">
                         <p>비자</p>
                         <i class="fa-solid fa-globe"></i>
-                        <p>무비자 90일간 체류 가능</p>
+                        <p>무비자 90일 체류 가능, ETA 발급 필요</p>
                     </div>
                     <div class="col">
                         <p>전압</p>
                         <i class="fa-solid fa-plug"></i>
-                        <p>220V</p>
+                        <p>240V</p>
                     </div>
                     <div class="col">
                         <p>여행최적기</p>
                         <i class="fa-solid fa-plane-departure"></i>
-                        <p>9~1월 덥지 않은 쾌적한 날씨</p>
+                        <p>1,2,3,9,10,11,12 월</p>
                     </div>
                 </div>
             </div>
